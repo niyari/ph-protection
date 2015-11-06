@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Proxy Hacking Protection</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		#textarea1 {
+			height: 10rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Proxy Hacking Protection</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="#ph-form">コードを生成</a></li>
+						<li><a href="#doc">ドキュメント</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<h2>コード生成</h2>
+		<div class="row">
+			<form id="ph-form">
+				<div class="input-field col s12">
+					<input value="" id="url1" type="url" class="validate" required>
+					<label for="url1">サイトのURL</label>
+				</div>
+
+				<div class="input-field col s12">
+					<input value="" id="url2" type="url" class="validate">
+					<label for="url2">モバイルサイト (スマートフォン用など、URLが複数ある場合に入力します) </label>
+				</div>
+
+				<div class="input-field col s12">
+					<select id="track1">
+						<option value="1">調査に協力する</option>
+						<option value="0">調査に協力しない</option>
+					</select>
+					<label>不定期に行われる状況調査</label>
+				</div>
+
+				<div class="input-field col s12">
+					<button id="subm1" class="btn waves-effect waves-light" type="submit">
+						コードを生成する
+						<i class="material-icons right">extension</i>
+					</button>
+				</div>
+
+				<br>
+				<div class="input-field col s12">
+					<p>貼り付け用コード</p>
+					<textarea id="textarea1" class="materialize-textarea"></textarea>
+				</div>
+
+			</form>
+
+			<div id="doc"></div>
+			<h2>ドキュメント</h2>
+			詳細は<a href="http://psn.hatenablog.jp/entry/proxy-hacking-protection">Proxy Hacking Protection - すなばいじり</a>をご覧ください。
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script src="punycode.min.js"></script>
+	<script src="ph-bootstrap.js"></script>
+	<script>
+
+	</script>
+</body>
+</html>
