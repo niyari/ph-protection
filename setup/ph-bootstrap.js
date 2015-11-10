@@ -17,6 +17,7 @@ $("#ph-form").submit(function (ev) {
 	var param = $("#track1").val() === "0" ? "Htnpsne.SiteCheck('param', { 'phProtTrack': false });\n" : "";
 
 	var outputText = '<s' + 'cript>\n'
+		+ '/* Proxy Hacking Protection (c) 2015 Pocket Systems. | psn.hatenablog.jp/entry/proxy-hacking-protection */\n'
 		+ '(function(H,T,N,p,s,n,e){H.Htnpsne=H.Htnpsne||{};Htnpsne[s]=Htnpsne[s]||'
 		+ 'function(){(Htnpsne[s].q=Htnpsne[s].q||[]).push(arguments)};n=T.createElement(N);'
 		+ "e=T.getElementsByTagName(N)[0];n.async=1;n['src']=p;e.parentNode.insertBefore(n,e)})"
