@@ -78,7 +78,7 @@
 	function insertTag(uriData) {
 		var head_tag = document.createElement("meta");
 		head_tag.name = "robots";
-		head_tag.content = "noindex";
+		head_tag.content = "noindex,nofollow";
 		document.getElementsByTagName("head")[0].appendChild(head_tag);
 		var error_box = document.createElement("div");
 		error_box.innerHTML = ''
